@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portal PSF</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body>
+	
+<header>
+	<hr><h1 style="text-align: center"><strong>Posto Saúde Familiar - PSF - Poço Fundo MG</strong></h1><hr>
+	<nav>
+		<ul><li><a href="homeDados.html">PSF</a></li></ul>
+		<ul><li><a href="equipeDados.html">Equipe</a></li></ul>
+		<ul><li><a href="contato.php">Contato</a></li></ul>
+	</nav>	
+	<!--<slider>
+		<div id="slider"><p>[]CONTEUDO DE SLIDER[]</p></div>
+	</slider><div id="slider"></div>	-->
+	
+	<script type="text/javascript">
+		
+		var imgs = [];
+		var slider;
+		var imgAtual;
+		var maxImg;
+		var tmp;
+		var tempotroca;
+
+		function preCarregamento(){
+
+			var s=1;
+
+			for(var i=0; i<2; i++){
+
+				imgs[i] = new Image();
+				imgs[i].src="../imagesSlider/s"+s+".jpg";
+				s++;
+			}
+		}
+
+		function carregarImg(img){
+
+			slider.style.backgroundImage="url('"+imgs[img].src+"')";
+		}
+
+		function inicia(){
+
+			preCarregamento();
+
+			imgAtual=0;
+			maxImg=imgs.length-1;
+
+			slider = document.getElementById("slider");
+			carregarImg(imgAtual);
+			tempotroca=4000;
+			tmp = setInterval(troca, tempotroca);
+		}
+
+		function troca(){
+
+			imgAtual++;
+			if(imgAtual>maxImg){
+
+				imgAtual=0;
+			}
+
+			carregarImg(imgAtual);
+
+		}
+
+		window.addEventListener("load", inicia);
+	</script>
+	<div id="slider"></div><br><br>
+<section>
+	<article>
+		<img src="../img/seringa.png">
+		<p>Vacinação: É justamente essa busca por usabilidade que deve nortear a produção de texto para a Web.</p>
+		<p>É justamente essa busca por usabilidade que deve nortear a produção de texto para a Web.</p>
+		<p>É justamente essa busca por usabilidade que norteia a produção.</p>	
+		<a href="psf2.html" style="font-weight:bold; color:purple">+Informações</a>
+	</article>
+</section>
+
+<section>
+	<article>
+		<img src="../img/cruz.png">
+		<p>Cuidados com a saúde: É justamente essa busca por usabilidade que deve nortear a produção de texto para a Web.</p>
+		<p>É justamente essa busca por usabilidade que deve nortear a produção de texto para a Web.</p>
+		<p>É justamente essa busca por usabilidade que norteia a produção.</p>	
+		<a href="psf3.html" style="font-weight:bold; color:purple">+Informações</a>
+	</article>
+</section>
+
+<section>
+	<article>
+		<img src="../img/doutor.png">
+		<p>Atendimento médico: É justamente essa busca por usabilidade que deve nortear a produção de texto para a Web.</p>
+		<p>É justamente essa busca por usabilidade que deve nortear a produção de texto para a Web.</p>
+		<p>É justamente essa busca por usabilidade que norteia a produção.</p>	
+		<a href="psf4.html" style="font-weight:bold; color:purple">+Informações</a>
+	</article>
+</section><br>
+<a id="ancora" href=""><strong>Subir</strong></a>
+</body>
+</html>
