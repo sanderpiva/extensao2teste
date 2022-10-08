@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+	    <meta charset="utf-8">
+
+</head>
+
+<body>
+
+<style>
+
+	body{
+	
+		background:#bf2020;
+	}
+
+	form{
+	
+		
+		margin:auto;
+		max-width:70%;
+		font-family:calibri;
+		border: 2px solid #bf2020;
+		width:450px;
+		height:180px;
+		padding:20px;
+		background:#7a7af7;
+	
+	}
+	
+	#titulo{
+	
+		text-align:center;
+		font-family:calibri;
+		color:white;
+	
+	
+	}
+	
+	#bt{
+	
+		background:red;
+		color:white;
+		transition-property: background, border-radius;
+        transition-duration: 1s, 1s;
+        transition-timing-function: ease-in-out;
+
+	}
+	
+	#bt:hover{
+	
+		background:green;
+		border-radius:20px;
+		color:orange;
+		cursor:pointer;
+	
+	
+	}
+	
+	input{
+	
+		border-radius:6px;
+		font-weight:bold;
+		
+	}
+
+	.titulo{
+			font-family: calibri;
+  			text-align: center;
+  			font-style:italic;
+
+	}
+
+
+
+
+</style>
+
+<div class="titulo">
+		
+        <a name="topo" style="color:white" target="self"></a>
+        <h1>BUDDY LOVE: CUPIDO DO AMOR!!</h1>
+        <img style="border-radius:10px"width="150px" height="150px"src="imglogo.jpg" alt="">
+        <br>
+        <h2>Página da ADM...</h2>
+        <br>
+
+        
+</div>
+
+
+
+<div id="titulo">
+
+<h2>Atualizar?</h2>
+<h3>Digite o codigo e apenas os campos necessarios:</h3>
+
+</div>
+
+<form method="Post" action="update.php">
+
+	<label><b>Codigo</b>:</label>
+	<input name="fcod" size="4px" required>
+
+	<label><b>Nome</b>:</label>
+	<input name="fnome" size="8px">
+
+	<label><b>CPF:</b></label>
+	<input name="fcpf" size="12px"><br><br>
+
+	<label><b>Telefone:</b></label>
+	<input name="ftelefone" size="12px" placeholder=" (xx)x-xxxx-xx-xx ">
+	
+	<label><b>Regiao de busca:</b></label>
+	<input name="fregiao" size="11px"><br><br>
+	
+	<label><b>Perfil:</b></label>
+	<input name="fperfil" size="11px">
+	
+	<label><b>Sexo do parceiro(a):</b>
+	<input name="fsexo" size="12px">
+	<br><br>
+	<input id="bt" type="submit" value="Atualizar">
+	<br><br>
+
+
+	
+	
+
+</form>
+
+<a href="ADMHomeBuddy.html"><font face="calibri" color="white" size="5px"><b>Voltar Formulário?</b></font></a>
+
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang=pt dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="ADMCSSHomeBuddy.css">
+
+
+
+
+
+  </head>
+  <body>
+
+
+        
+    <div class="titulo">
+        <a name="topo" style="color:white" target="self"></a>
+        <h1>BUDDY LOVE: CUPIDO DO AMOR!!</h1>
+        <img style="border-radius:10px"width="150px" height="150px"src="imglogo.jpg" alt="">
+        <br>
+        <h2>Página da ADM...</h2>
+        <br>
+
+    </div>
+
+      <section id="script">
+        
+        
+        <a href="formaux.html" style="color:white; font-family: calibri; text-decoration: none" target="_self">Fazer uma busca pela regiao? clique em mim!</a><br><br>
+        
+		<a style="font-family: calibri; color:white; padding:9px" href="consultatotal.php">Consulta completa?</a><br><br>
+		<a style="font-family: calibri; color:white; padding:9px" href="apgara.html">Apagar registro?</a>
+	    <a style="font-family: calibri; color:white; padding:9px" href="update.html">Atualizar registro?</a>
+
+
+		
+      
+        <div id="jog2"></div>
+        <div id="jog1"></div>
+        <div id="jog3"></div>
+        <div id="biombo1"></div>
+        
+        
+
+        
+      </section>
+      <br><br>
+
+           
+      
+
+  </body>
+
+  <footer>
+    
+    <style type="text/css">
+          
+
+          #jog1{
+
+
+            position:absolute;
+			
+            width:68px;
+            height:150px;
+            margin-left:0px;
+            margin-top:50px;
+            border-radius: 15px;
+            cursor:pointer;
+            background: url("imglogo1.jpg");
+			      background-repeat:none;
+			
+
+
+          }
+
+          #jog2{
+
+
+            position:absolute;
+            width:183px;
+            height:150px;
+            margin-left:300px;
+            margin-top:50px;
+            border-radius: 15px;
+            background: url("cupido4.jpg");
+            background-repeat: none;
+            background-size: cover;
+            cursor:pointer;
+
+          }
+
+
+          #biombo1{
+
+            /*TEM QUE DEIXAR POSITION ABSOLUTE PARA A IMAGEM FICAR NA FRENTE!!*/
+            position:absolute;
+            width:500px;
+            height:300px;
+            margin-left:380px;
+            margin-top:50px;
+            
+            background: white;
+            
+          }
+
+          #jog3{
+
+
+            position:absolute;
+            width:150px;
+            height:150px;
+            /*310*/
+            margin-left:1013px;
+            margin-top:50px;
+            border-radius: 15px;
+            background: url("cupido3.jpg");
+            /*background-repeat: none;
+            background-size: cover;*/
+            cursor:pointer;
+
+          }
+
+          
+
+        </style>
+
+        
+      
+          <script type="text/javascript">
+          
+          var dx;
+          var px;
+          var py;
+          var ang;
+          var dy;
+          var anima2;
+          var anima3;
+          var vel;
+          var estado=0;
+          var anima;
+          var fjog1;
+          var fjog2;
+          var fjog3;
+          var estado2;
+          var biombo1;
+
+          function move(){
+
+            //fjog1 = document.getElementById("jog1");
+
+            if(estado==0){
+              estado=1;
+              
+              anima=requestAnimationFrame(gamefig1);
+              anima2=requestAnimationFrame(game2fig1);
+
+
+            }
+
+            else{
+              estado=0;
+              
+              cancelAnimationFrame(anima);
+              cancelAnimationFrame(anima2);
+
+
+              
+            }
+
+          }
+
+          function move2(){
+
+            //fjog2 = document.getElementById("jog2");
+
+            
+
+            if(estado2==0){
+              estado2=1;
+              
+              anima3=requestAnimationFrame(gamefig2);
+              
+
+
+            }
+
+            else{
+              estado2=0;
+              
+              cancelAnimationFrame(anima3);
+  
+            }
+
+
+
+          }
+
+
+
+          function gamefig1(){
+
+            //fjog1 = document.getElementById("jog1");
+
+            
+            px+=dx*vel;
+            //py+=dy*vel;
+
+            fjog1.style.left = px+"px";
+            //fjog1.style.top = py+"px";
+            
+            //700
+            if(px>630){
+
+              dx=-1;
+
+            }else if(px<100){
+
+              dx=1;
+            }
+
+            /*if(py>40){
+
+              dy=-1;
+
+            }else if(py<-60){
+
+              dy=1;
+            }*/
+            
+            anima= requestAnimationFrame(gamefig1);
+
+
+      
+          }
+
+          function game2fig1(){
+
+
+            fjog1.style.transform="rotate("+ang+"deg)";
+            ang++;
+            if(ang>360){
+
+              ang=0;
+            }
+
+            anima2=requestAnimationFrame(game2fig1);
+
+
+
+          }
+
+          function gamefig2(){
+
+            //fjog2 = document.getElementById("jog2");
+
+            
+            px+=dx*vel;
+            
+
+            fjog2.style.left = px+"px";
+            
+            
+            //630
+            if(px>628){
+
+              dx=-1;
+              //aqui fjog2 troca de imagem pegando o conteudo do Id 'jog3'
+              //fjog2 = document.getElementById("biombo1");
+              fjog2 = document.getElementById("jog3");
+
+              //aqui os movimentos do fjog1 sao cancelados
+              cancelAnimationFrame(anima);
+              ang=0;
+              fjog1.style.transform="rotate("+ang+"deg)";
+
+              cancelAnimationFrame(anima2);
+              
+              
+
+              //300-1450
+            }else if(px<-300){
+
+              dx=1;
+              //aqui o fjog2 volta a ter sua imagem original e eh ela que ganha os movimentos
+              fjog2 = document.getElementById("jog2");
+              //fjog1 recupera nesse pto seus movimentos
+              anima = requestAnimationFrame(gamefig1);
+              anima2 = requestAnimationFrame(game2fig1); 
+
+            }
+
+            
+            anima3= requestAnimationFrame(gamefig2);
+
+
+      
+          }
+
+          
+
+
+
+          function inicio(){
+
+            dx=1;
+            px=0;
+            vel=3;
+            dy=1;
+            py=0;
+            estado=1;
+            ang=0;
+            estado2=1;
+
+            fjog1 = document.getElementById("jog1");
+            //biombo1= document.getElementById("biombo1");
+
+            //fjog1.addEventListener("click", move);
+
+            fjog2 = document.getElementById("jog2");
+
+            //fjog2.addEventListener("click", move2);
+            //game e game 2 sao de fjog1
+            //game3 eh de fjog2
+            gamefig1();
+            game2fig1();
+            gamefig2();
+
+
+
+
+          }
+
+
+          window.addEventListener("load", inicio);
+
+
+
+        </script>
+
+
+
+  </footer>
+
+</html>

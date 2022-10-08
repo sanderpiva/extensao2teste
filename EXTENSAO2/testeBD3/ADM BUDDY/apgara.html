@@ -1,0 +1,118 @@
+<html>
+	
+
+	<head>
+		    <meta charset="utf-8">
+
+	</head>
+
+
+	<style>
+	
+		body{
+					margin:auto;
+					background-image:url("fundo.jpg");
+					background-repeat:none;
+					background-size:cover;
+					background-attachment:fixed;
+					
+			}	
+
+		input {
+		
+			cursor:pointer;
+			border-radius: 8px;
+			text-align: center;
+			font-weight:bold;
+			background-color: #2a2;
+		}
+
+		#bt{
+
+			cursor:pointer;
+			border-radius: 8px;
+			text-align: center;
+			font-weight:bold;
+			background-color: #a22;
+			color:white;
+
+
+		}
+
+		label{
+
+			font-weight: bold;
+			font-family:calibri;
+			font-size:20px;
+		}
+
+		#bt:hover{
+
+			background-color: #aff;
+			color:black;
+		}
+
+		form{
+
+			text-align: justify;
+			padding:20px;
+		}
+
+		.titulo{
+
+			font-family: calibri;
+  			text-align: center;
+  			font-style:italic;
+  			padding:3px;
+
+		}
+
+
+
+		
+	</style>
+	
+
+	<div class="titulo">
+
+        <a name="topo" style="color:white" target="self"></a>
+        <h1>BUDDY LOVE: CUPIDO DO AMOR!!</h1>
+        <img style="border-radius:10px"width="150px" height="150px"src="imglogo.jpg" alt="">
+        <br>
+        <h2>Página da ADM...</h2>
+        <br>
+
+        
+    </div>
+
+
+	<form method="post" action="apagarBd.php">
+	
+		<label>Codigo do registro a cancelar</label>
+		<input name="cod" size="7"><br><br>
+		
+		<label>CPF do registro a cancelar....:</label>
+		<input name="cpf" size="7"><br><br>
+		
+		
+		<label>Regiao a cancelar registro</label><br><br>
+		<label>[Alfenas:1/Carmo de Minas:2/Carvalhopolis:3/Santa Rita de Caldas:4]</label>
+		<input name="reg" size="3"><br><br><br><br>
+		
+		
+		
+		
+		<input id="bt" type="submit" value="APAGAR">
+
+
+		
+	</form>
+	
+	<a style="font-family: calibri; padding: 20px; color:white; font-size:20px; font-weight:bold; " href="ADMHomeBuddy.html" target="_self"><b>Voltar Formulário?</b></a>
+		
+		
+		
+
+
+
+</html>

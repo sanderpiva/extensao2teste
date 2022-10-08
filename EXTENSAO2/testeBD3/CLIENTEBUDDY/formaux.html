@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+</head>
+<body>
+
+	<style type="text/css">
+		
+		body{
+
+			background: url("cego2.jpg");
+
+		}
+
+		#formAux{
+
+			background: #a50a08;
+			width: 500px;
+			height: 330px;
+			padding:2px;
+
+		}
+
+		h2, label, input{
+
+			font-family: "calibri";
+			
+		}
+
+		#bt{
+
+			cursor:pointer;
+		}
+
+		#bt:hover{
+
+			background: green;
+			color:white;
+		
+		}
+		
+		input{
+			
+			cursor:pointer;
+		
+		}
+
+
+	</style>
+
+	<form id="formAux"name="F_ConCat" method="post" action="consultas.php">
+		
+		<a style="color:white; font-family: calibri" href="ADMHomeBuddy.html" target="_self">Voltar HomePage</a>
+
+		<br><br>
+		<h2 style="color:white">QUE TAL ESCOLHER SUA METADE SEM BASEAR-SE POR IMAGENS? CURTE?</h2>
+		<label style="color:white">CONSULTA-Perfil - [Normal/Nerd/Popular]</label><br>
+		<input type="text" name="perfil" value="" size="5" >
+		
+		<br><br><br>
+		
+		<label style="color:white">CONSULTA-Cidade - [Alfenas/Carmo de Minas/Carvalhopolis/Santa Rita de Caldas]</label><br>
+		<input type="text" name="cidade" value="" size="35" >
+		
+	    
+		<br><br>
+		
+		<input id="bt"type="submit" name="" value="Consultar">
+		
+		
+		
+		
+
+
+	</form>
+	
+</body>
+</html>
