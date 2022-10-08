@@ -1,0 +1,99 @@
+
+body{
+
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5;
+  background: url("fundoGame.jpg");
+  font-family: sans-serif;
+
+}
+
+.Logo{
+
+  margin-top: 30px;
+
+
+}
+
+
+.Titulo{
+
+  background: #671b2e;
+  color: #e4b61f;
+  border-radius: 10px;
+  width: 70%;
+  text-align: center;
+  padding: 5px 10px;
+  margin:auto;
+  margin-top:30px; 
+  color: #e4b61f;
+}
+
+.Inicio, .Paragrafo1, .Paragrafo2{
+
+  background: #671b2e;
+  color: #e4b61f;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 5px 20px;
+  margin-top: 30px;
+
+
+}
+
+.Video{
+
+  margin-top: 30px;
+
+
+}
+
+.Tabela{
+
+  background: #e61e1e70;
+  color: #e4b61f;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 10px;
+  margin: auto;
+  margin-top: 20px;
+  width: 450px;
+  height: 200px;
+
+
+}
+
+
+.Tabela table{
+
+  background: #000000d1;
+  color: #00173;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px 5px;
+  margin-top: 10px;
+  width: 400px;
+
+
+
+}
+
+td{
+
+  text-align: center;
+}
+
+footer{
+
+  background: #e61e1e70;
+  border-radius: 10px;
+  margin-top: 70px;
+  margin: auto;
+  text-align: left;
+  color: #e4b61f;
+  width: 400px;
+
+}
