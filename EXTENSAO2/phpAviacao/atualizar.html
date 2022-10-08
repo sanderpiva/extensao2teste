@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <style>
+
+
+        body{
+
+          background-image: url("tanque.jpg");
+          background-repeat: none;
+          background-size: cover;
+          background-attachment: fixed;
+          font-family: calibri;
+
+        }
+
+        .titulo{
+
+          color:white;
+
+        }
+
+        input{
+
+            border-radius: 6px;
+        }
+
+        #format{
+
+          background: red;
+          color:white;
+          transition-property: background, border-radius;
+          transition-duration: 1s, 1s;
+          transition-timing-function: ease-in-out;
+
+        }
+
+        #format:hover{
+          border-radius: 25px;
+          background: green;
+          color:white;
+          cursor:pointer;
+
+        }
+
+
+      </style>
+
+      <form name="" method="post" action="atualizar.php">
+        <div class="titulo">
+          <h3>APOS INSERIR O CODIGO, ATUALIZAR APENAS OS CAMPOS NECESSÁRIOS!!<h3/>
+        </div>
+		    <br><br><br></label>
+
+  		  <label for="">Codigo</label>
+  		  <input type="text" name="fcod" value="" placeholder="Codigo" size="5">
+  		  <br><br>
+        <label for="">Nome </label>
+  		  <input type="text" name="fnome" value="" placeholder="Nome" size="15">
+  		  <br><br>
+        <label for="">Cidade</label>
+  		  <input type="text" name="fcidade" value="" placeholder="Cidade" size="15">
+  		  <br><br>
+        <label for="">Cep</label>
+  		  <input type="text" name="fcep" value="" placeholder="CEP" size="15">
+  		  <br><br>
+        <label for="">Telefone</label>
+  		  <input type="text" name="ftel" value="" placeholder="(xx)xxxx-xxxx" size="15">
+  		  <br><br>
+        <label for="">Area militar</label>
+  		  <input type="text" name="farea" value="" placeholder="Area militar" size="15">
+  		  <br><br>
+
+        <input id="format" type="submit" name="" value="Atualizar">
+
+
+
+
+
+	  <form/>
+	  <br><br><br>
+	  <a href="menu.html"><em>CLIQUE PARA HomePage</em></a>
+
+  </body>
+</html>

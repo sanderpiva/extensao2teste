@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+
+
+      body{
+
+        background-image: url("navio4.jpg");
+        background-repeat: none;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: calibri;
+
+      }
+
+
+      input{
+
+        border-radius:6px;
+
+      }
+
+      #format{
+
+        background: red;
+        color:white;
+        transition-property: background, border-radius;
+        transition-duration: 1s, 1s;
+        transition-timing-function: ease-in-out;
+
+      }
+
+      #format:hover{
+        border-radius: 25px;
+        background: green;
+        color:white;
+        cursor:pointer;
+
+      }
+
+
+
+    </style>
+
+		<form name="" method="post" action="inserir.php">
+
+      <h3>Insira seu registro:</h3><br><br>
+		  <label for="">Codigo do candidato: </label>
+		  <input type="text" name="fcod" value="" size="3" placeholder="Cod" required>
+		 <br><br>
+
+		  <label for="">Nome do candidato: </label>
+		  <input type="text" name="fnome" value="" size="20" placeholder="Nome completo" required>
+		  <br><br>
+
+		  <label for="">Cidade de inscrição: </label>
+		  <input type="text" name="fcidade" value="" value="" size="15" placeholder="Cidade" required>
+		  <br><br>
+
+		  <label for="">CEP do endereço: </label>
+		  <input type="text" name="fcep" value="" value="" size="15" placeholder="CEP" required>
+		  <br><br>
+
+		  <label for="">Telefone: </label>
+		  <input type="text" name="ftel" value="" value="" size="15" placeholder="(xx)xxxx-xxxx" required>
+		  <br><br>
+
+
+		  <label for="">Area militar desejada: (marinha/aeronautica/exército): </label>
+		  <input type="text" name="farea" value="" size="15" placeholder="Area militar" required>
+		  <br><br>
+
+		  <input id="format" type="submit" name="" value="Enviar">
+
+
+		<form/>
+      <br><br><br>
+	  <a style="color:black; font-weight:bold " href="menu.html"><em>CLIQUE PARA HomePage</em></a>
+
+  </body>
+</html>

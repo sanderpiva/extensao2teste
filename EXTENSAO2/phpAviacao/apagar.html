@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+
+
+      body{
+
+        background-image: url("aviao.jpg");
+        background-repeat: none;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: calibri;
+
+      }
+
+      #format{
+
+        background: red;
+        color:white;
+        border-radius: 6px;
+        transition-property: background, border-radius;
+        transition-duration: 1s, 1s;
+        transition-timing-function: ease-in-out;
+
+      }
+
+      #format:hover{
+        border-radius: 25px;
+        background: green;
+        color:white;
+        cursor:pointer;
+
+      }
+
+      label{
+
+        font-size:20px;
+
+      }
+
+    </style>
+
+    <form name="" method="post" action="apagar.php">
+
+		<h2>CANCELAR REGISTRO:<h2/>
+		  <br>
+		  <label for="">Digite codigo do registro:</label>
+		  <input style="border-radius:8px" type="text" name="fcod" value="" size="5" placeholder="Codigo">
+		  <br><br><br>
+		  <input id="format"type="submit" name="" value="Cancelar">
+
+
+		  <br><br><br>
+		  <a style="font-size:20px"href="menu.html"><em>Voltar HomePage</em></a>
+
+
+
+
+	  <form/>
+  </body>
+</html>

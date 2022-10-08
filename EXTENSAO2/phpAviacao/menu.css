@@ -1,0 +1,104 @@
+.titulopg{
+
+  font-size: 30px;
+  font-family: calibri;
+  font-weight: bold;
+  text-align: center;
+  background: orange;
+
+}
+
+
+*{
+
+  margin:0px;
+  padding:0px;
+
+}
+
+
+label{
+
+  position:absolute;
+
+  cursor:pointer;
+
+}
+
+label:hover{
+
+  border: 2px dashed red;
+  margin:auto;
+
+
+
+}
+
+body{
+
+  background-image: url("aviaoMenu.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+}
+
+input[type=checkbox]{
+
+  display:none;
+
+}
+
+input[type=checkbox]:checked ~ nav{
+
+  transform:translateX(440px);
+  transition: all .5s;
+
+}
+
+nav{
+
+    background-color:black;
+    width:400px;
+    height:200px;
+    margin-left: -440px;
+    margin-top: 50px;
+    position:absolute;
+    padding:15px;
+    /*border-radius: 20px;*/
+
+
+
+}
+
+ul{
+
+
+}
+
+li{
+
+  background-color: red;
+
+
+}
+
+a{
+
+  text-decoration: none;
+  display: block;
+  padding:5px;
+  font-size: 30px;
+  font-family: calibri;
+  color:white;
+
+
+}
+
+a:hover{
+
+  /*background-color: #5cd;*/
+  color:yellow;
+
+}
